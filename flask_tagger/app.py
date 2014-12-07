@@ -1,5 +1,7 @@
-from flask import render_template, request, redirect, url_for
-from app import app
+from flask import Flask, render_template, request, redirect, url_for
+
+app = Flask(__name__)
+app.config.from_pyfile('config.py')
 
 @app.route('/', methods=['GET', 'POST'])
 def tags_form():

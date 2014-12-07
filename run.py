@@ -1,4 +1,4 @@
-from flask_tagger import app
+from flask_tagger.app import app
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
