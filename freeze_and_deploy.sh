@@ -19,9 +19,9 @@ if [ -d "./gh-pages" ]; then
     safe git commit -sm "updated frozen files"
     
     echo 'begining push to github'
-    safe git subtree push --prefix gh-pages origin master 
+    safe git subtree push --prefix gh-pages origin gh-pages 
 else
-    barf 'Deploy failure, ./gh-pages does not exist'
+    barf 'Deploy failure, ./build does not exist'
 fi
 
 exit 0
