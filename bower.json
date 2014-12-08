@@ -1,9 +1,0 @@
-{
-  "name": "flask_tagger",
-  "version": "0.0.0",
-  "authors": [
-    "buckie <wjmartino@gmail.com>"
-  ],
-  "license": "MIT",
-  "private": true
-}
