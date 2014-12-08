@@ -1,6 +1,6 @@
 import os
 
-REPO_NAME = ""  # Used for FREEZER_BASE_URL
+REPO_NAME = "flask-tagger"  # Used for FREEZER_BASE_URL
 
 # settings used in development
 DEBUG = True
