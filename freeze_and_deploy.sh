@@ -13,15 +13,15 @@ else
 fi
 
 
-if [ -d "./build" ]; then
+if [ -d "./gh-pages" ]; then
     echo 'committing new frozen files'
-    safe git add ./build/*
+    safe git add ./gh-pages/*
     safe git commit -sm "updated frozen files"
     
     echo 'begining push to github'
-    safe git subtree push --prefix build origin master 
+    safe git subtree push --prefix gh-pages origin master 
 else
-    barf 'Deploy failure, ./build does not exist'
+    barf 'Deploy failure, ./gh-pages does not exist'
 fi
 
 exit 0

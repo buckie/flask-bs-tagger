@@ -12,6 +12,6 @@ PORT = 5000  # Over 9000!
 APP_DIR = os.path.dirname(os.path.abspath(__file__))
 
 PROJECT_ROOT = APP_DIR
-FREEZER_DESTINATION = os.path.join(os.path.dirname(PROJECT_ROOT), 'build')
+FREEZER_DESTINATION = os.path.join(os.path.dirname(PROJECT_ROOT), 'gh-pages')
 FREEZER_BASE_URL = "http://localhost/{0}".format(REPO_NAME)
 FREEZER_REMOVE_EXTRA_FILES = True  # IMPORTANT: If this is True, all app files
