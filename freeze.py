@@ -1,7 +1,4 @@
-from flask_tagger import app
-from flask_frozen import Freezer
-
-freezer = Freezer(app)
+from flask_tagger.app import freezer
 
 if __name__ == '__main__':
     freezer.freeze()
